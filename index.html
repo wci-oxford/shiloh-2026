@@ -60,6 +60,11 @@ legend{font-weight:600;font-size:.95rem;padding:0 6px}
 code{background:var(--card);border:1px solid var(--line);padding:2px 6px;border-radius:6px}
 footer{margin-top:48px;background:var(--wine);color:#e9d6c6;padding:32px 0 40px;font-size:.95rem}
 footer h3{color:var(--gold);font-size:1.3rem;margin-bottom:8px}
+.qr{display:flex;gap:20px;align-items:center;margin-bottom:24px}
+.qr #qr{background:#fff;padding:10px;border-radius:12px;line-height:0;flex:none}
+.tag{font-family:Fraunces,Georgia,serif;font-size:1.15rem;color:#fff}
+.links{display:flex;gap:18px;flex-wrap:wrap}
+.links a{color:var(--gold);font-weight:600}
 @media (max-width:480px){.row{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
@@ -157,12 +162,17 @@ footer h3{color:var(--gold);font-size:1.3rem;margin-bottom:8px}
 </main>
 
 <footer id="contact"><div class="wrap">
+<div class="qr"><div id="qr" role="img" aria-label="QR code that opens this page"></div><div><h3>Scan for Shiloh 2026</h3><p>Point your phone camera here to open this page, then send it to someone who should be at Shiloh with you.</p></div></div>
+<p class="tag">Liberating the world through the preaching of the Word of Faith</p>
 <h3>Who do I ask?</h3>
 <p>Message us on WhatsApp: <a href="https://wa.me/447721526866" style="color:var(--gold)">+44 7721 526866</a> or <a href="https://wa.me/447572399718" style="color:var(--gold)">+44 7572 399718</a></p>
 <p><b>Sundays</b> 10:00am – 11:45am<br><b>Midweek</b> 6:30pm – 8:00pm<br>Both at St Mary and St John CE Primary School, Meadow Lane, Iffley Road, Oxford, OX4 1TJ</p>
+<p><b>Covenant Hour of Prayer</b> Mon – Sat 6:00am (online)</p>
+<p class="links"><a href="https://winnerschapeloxford.org.uk/" target="_blank" rel="noopener">Website</a><a href="https://www.instagram.com/winnersoxford/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/winnersoxford/" target="_blank" rel="noopener">Facebook</a></p>
 <p>Winners Chapel International Oxford · a branch of Living Faith Church Worldwide</p>
 </div></footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
 var WA_NUMBER="447721526866";               // e.g. "447700900123" (no + or spaces). Empty lets the sender pick a contact.
 var VENUE="Oxford";             // used for Maps; set to the full venue address
@@ -179,6 +189,7 @@ document.querySelectorAll("form").forEach(function(f){
 f.addEventListener("submit",function(e){e.preventDefault();window.open(wa(msg(f)),"_blank","noopener")});
 var c=f.querySelector("[data-copy]");if(c)c.addEventListener("click",function(){tryCopy(msg(f),c)})});
 var pageUrl=location.href.split("#")[0];
+try{new QRCode(document.getElementById("qr"),{text:pageUrl,width:128,height:128})}catch(e){document.querySelector(".qr").style.display="none"}
 document.getElementById("share").href=wa("Join us for Shiloh 2026 at WCI Oxford, Tue 8 – Sun 13 Dec. Times, bus seats and directions: "+pageUrl);
 document.getElementById("copylink").addEventListener("click",function(){tryCopy(pageUrl,this)});
 document.getElementById("copyaddr").addEventListener("click",function(){tryCopy(VENUE,this)});
