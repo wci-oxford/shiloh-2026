@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Shiloh 2026 – WCI Oxford</title>
-<meta name="description" content="Shiloh 2026, Far Above. Tue 8 – Sun 13 Dec 2026 with Winners Chapel International Oxford. Programme, pickups and more.">
+<meta name="description" content="Shiloh 2026, Far Above. Tue 8 – Sun 13 Dec 2026 with Winners Chapel International Oxford. Programme, pickups, Shiloh wears and more.">
 <meta name="theme-color" content="#3a0309">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
@@ -31,7 +31,7 @@ a{color:var(--gold)}
 .hero{background:var(--card);border-radius:28px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.4)}
 .poster{position:relative;aspect-ratio:1200/630;background:radial-gradient(circle at 70% 30%,#b3261e,#5d0d14 70%);display:grid;place-items:center;overflow:hidden}
 .poster i{font:900 clamp(3rem,16vw,6.5rem)/1 "Playfair Display",serif;font-style:normal;background:linear-gradient(#f6dc8a,#b9852a);-webkit-background-clip:text;background-clip:text;color:transparent}
-.poster div{text-align:center}.poster i{display:block}.poster i.y{font-size:clamp(1.6rem,8vw,3rem);letter-spacing:.3em;margin:.4em -.3em 0 0}
+.poster div{text-align:center}.poster a{display:none}.poster.ok{aspect-ratio:auto;display:block;background:#4a0a10}.poster.ok .fb{display:none}.poster.ok a{display:block}.poster img{display:block;width:100%;height:auto}.poster i{display:block}.poster i.y{font-size:clamp(1.6rem,8vw,3rem);letter-spacing:.3em;margin:.4em -.3em 0 0}
 .hb{padding:20px 22px 26px}
 .eye{display:flex;align-items:center;gap:14px;color:var(--gold);font-weight:700;letter-spacing:.26em;font-size:.82rem;text-transform:uppercase}
 .eye::after{content:"";flex:1;height:1px;background:var(--line)}
@@ -72,6 +72,9 @@ legend{font-weight:600;font-size:.95rem;padding:0 6px}
 .chk label{display:flex;gap:8px;align-items:center;font-weight:400}.chk input{width:auto}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .acts{display:flex;gap:10px;flex-wrap:wrap}
+.tw{overflow-x:auto;margin:0 0 6px}table{border-collapse:collapse;width:100%;max-width:420px}th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--line)}th{color:var(--gold);font-weight:700}
+.row3{display:grid;grid-template-columns:2fr 2fr 1fr;gap:12px;margin-top:10px}
+@media (max-width:520px){.row3{grid-template-columns:1fr 1fr}}
 code{background:rgba(0,0,0,.3);border:1px solid var(--line);padding:3px 8px;border-radius:8px;font-size:.95rem}
 footer{margin-top:50px;padding:34px 0 44px;border-top:1px solid var(--line);color:var(--mute);font-size:.98rem}
 footer h3{color:var(--gold);font-size:1.3rem;margin-bottom:8px}
@@ -92,7 +95,7 @@ footer h3{color:var(--gold);font-size:1.3rem;margin-bottom:8px}
 <header class="top"><div class="brand"><svg><use href="#g"/></svg><div><b>WINNERS CHAPEL</b><small>INTERNATIONAL · OXFORD</small></div></div><span class="badge">VIEWING CENTRE</span></header>
 
 <section class="hero">
-<div class="poster"><div><i>SHILOH</i><i class="y">2026</i></div></div>
+<div class="poster"><div class="fb"><i>SHILOH</i><i class="y">2026</i></div><a href="flyer.jpg" target="_blank" rel="noopener" aria-label="Open the Shiloh 2026 flyer full size"><img src="flyer.jpg" width="1200" height="1703" alt="Shiloh 2026 flyer: Far Above, 8th to 13th December 2026, Winners Chapel International Oxford" onload="this.closest('.poster').classList.add('ok')"></a></div>
 <div class="hb">
 <div class="eye">Shiloh 2026 · Theme</div>
 <h1>Far Above</h1>
@@ -109,7 +112,7 @@ footer h3{color:var(--gold);font-size:1.3rem;margin-bottom:8px}
 <div class="grp"><h2>Quick answers</h2><p>For first-timers and friends</p></div>
 <details><summary><span><b>Do I need a ticket?</b></span></summary><div class="in">No. Shiloh is free and open to everyone.</div></details>
 <details><summary><span><b>Do I need to register?</b></span></summary><div class="in">No. Just come. Request a pickup below if you need a ride to the venue.</div></details>
-<details><summary><span><b>Where is it happening?</b></span></summary><div class="in">Shiloh is broadcast from Canaanland. The Prayer Hour, Morning Sessions and Specialised Classes are online. The Saturday 5:00am Impartation Service and the evening Encounter Nights are in person at St Mary and St John CE Primary School, Iffley Road, Oxford.</div></details>
+<details><summary><span><b>Where is it happening?</b></span></summary><div class="in">Shiloh is broadcast from Canaanland. The Prayer Hour, Morning Sessions and Specialised Classes are online. The Saturday 6:00am Impartation Service and the evening Encounter Nights are in person at St Mary and St John CE Primary School, Iffley Road, Oxford.</div></details>
 <details><summary><span><b>Do I come every day?</b></span></summary><div class="in">Yes, if you can. Six days, every session. Each day builds on the one before.</div></details>
 
 <div class="grp"><h2>Before you come</h2><p>What it is, when, where, arriving</p></div>
@@ -124,26 +127,27 @@ footer h3{color:var(--gold);font-size:1.3rem;margin-bottom:8px}
 <li><b>6:15am</b><span>Morning Session · Hour of Visitation<br><small>Online</small></span></li>
 <li><b>11:30am</b><span>Specialised Classes<br><small>Online · Wednesday to Friday</small></span></li>
 <li><b>5:00pm</b><span>Evening Session · Encounter Night<br><small>In person at the venue · Friday: Victory Celebration Night</small></span></li>
-<li><b>Sat 5:00am</b><span>Impartation Service<br><small>In person at the venue</small></span></li></ul>
+<li><b>Sat 6:00am</b><span>Impartation Service<br><small>In person at the venue</small></span></li></ul>
 <button class="btn ghost" id="ics" type="button">Add Shiloh week to my calendar</button></div></details>
 <details><summary><span><b>Where is it?</b><small>Oxford venue and directions</small></span></summary><div class="in">
 <h3 style="margin-top:0">Oxford viewing centre</h3>
 <p><code id="addr">St Mary and St John CE Primary School, Meadow Lane, Iffley Road, Oxford, OX4 1TJ</code></p>
-<p>The in-person sessions are here: the Saturday 5:00am Impartation Service and the evening Encounter Nights, broadcast from Canaanland with the whole church together in one room.</p>
+<p>The in-person sessions are here: the Saturday 6:00am Impartation Service and the evening Encounter Nights, broadcast from Canaanland with the whole church together in one room.</p>
 <div class="acts"><a class="btn maps" href="#" target="_blank" rel="noopener">Open in Maps</a><button class="btn ghost" id="copyaddr" type="button">Copy address</button></div></div></details>
 <details><summary><span><b>What happens when I arrive?</b><small>Welcome desk, first-timers, what to bring</small></span></summary><div class="in">
 <p>Come to the welcome desk at the entrance if it is your first time. Someone will show you where to sit and where everything is. Arrive before the session starts and stay to the end.</p>
 <h3>What to bring</h3><p>Yourself first, and someone with you. Then your Bible, notebook and pen, a warm layer for the early-morning sessions, and your offering.</p></div></details>
 
-<div class="grp"><h2>Getting there</h2><p>Transport</p></div>
+<div class="grp"><h2>Getting there and ready</h2><p>Transport and Shiloh wears</p></div>
 <details><summary><span><b>How do I get there?</b><small>Drive, or request a pickup from your home</small></span></summary><div class="in">
 <p>Need a ride to the in-person sessions? Give us your full home address and postcode below and the team will confirm your pickup time. Driving? Come in your car and fill the spare seats on your way.</p>
 <form data-wa="Pickup request" aria-label="Request a pickup">
 <div class="row"><label>Name<input name="Name" required autocomplete="name"></label><label>Phone<input name="Phone" type="tel" required autocomplete="tel"></label></div>
 <label>Full home address, including postcode<textarea name="Pickup address" rows="2" required autocomplete="street-address"></textarea></label>
 <label>Seats needed<select name="Seats"><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select></label>
-<fieldset><legend>Which in-person sessions?</legend><div class="chk"><label><input type="checkbox" name="Sessions" value="Evening Encounter Nights (5:00pm)" checked>Evening Encounter Nights (5:00pm)</label><label><input type="checkbox" name="Sessions" value="Saturday 5:00am Impartation Service" checked>Saturday 5:00am Impartation Service</label></div></fieldset>
+<fieldset><legend>Which in-person sessions?</legend><div class="chk"><label><input type="checkbox" name="Sessions" value="Evening Encounter Nights (5:00pm)" checked>Evening Encounter Nights (5:00pm)</label><label><input type="checkbox" name="Sessions" value="Saturday 6:00am Impartation Service" checked>Saturday 6:00am Impartation Service</label></div></fieldset>
 <div class="acts"><button class="btn" type="submit">Send via WhatsApp</button><button class="btn ghost" type="button" data-copy>Copy booking</button></div></form></div></details>
+<details><summary><span><b>Can I get the Shiloh wears?</b><small>Hoodie, polo shirt and beanie hat. Choose one or more</small></span></summary><div class="in"><p>Wear the theme. The hoodie and polo shirt come in <b>red, white or royal blue</b>. Reserve yours and the team will message you about payment and collection.</p><h3>Size guide</h3><p class="mute" style="margin:0 0 8px">Chest measurements in inches. These are the body size each size is made to fit, not the garment itself.</p><div class="tw"><table><thead><tr><th>Size</th><th>Hoodie</th><th>Polo shirt</th></tr></thead><tbody><tr><td>XS</td><td>33"–34"</td><td>–</td></tr><tr><td>S</td><td>35"–37"</td><td>35"–37"</td></tr><tr><td>M</td><td>38"–40"</td><td>38"–40"</td></tr><tr><td>L</td><td>41"–43"</td><td>41"–43"</td></tr><tr><td>XL</td><td>44"–47"</td><td>44"–46"</td></tr><tr><td>XXL</td><td>48"–50"</td><td>47"–49"</td></tr><tr><td>3XL</td><td>51"–53"</td><td>50"–52"</td></tr><tr><td>4XL</td><td>54"–56"</td><td>53"–55"</td></tr><tr><td>5XL</td><td>58"–60"</td><td>56"–58"</td></tr></tbody></table></div><form data-wa="Shiloh wears order" aria-label="Order Shiloh wears"><div class="row"><label>Name<input name="Name" required></label><label>Phone<input name="Phone" type="tel" required></label></div><fieldset data-item><legend>Hoodie</legend><div class="chk"><label><input class="add" type="checkbox" name="Items" value="Hoodie">Add a hoodie</label></div><div class="row3"><label>Colour<select name="Hoodie colour"><option>Red</option><option>White</option><option>Royal blue</option></select></label><label>Size<select name="Hoodie size"><option value="XS (33&quot;–34&quot;)">XS · 33"–34"</option><option value="S (35&quot;–37&quot;)">S · 35"–37"</option><option value="M (38&quot;–40&quot;)">M · 38"–40"</option><option value="L (41&quot;–43&quot;)">L · 41"–43"</option><option value="XL (44&quot;–47&quot;)">XL · 44"–47"</option><option value="XXL (48&quot;–50&quot;)">XXL · 48"–50"</option><option value="3XL (51&quot;–53&quot;)">3XL · 51"–53"</option><option value="4XL (54&quot;–56&quot;)">4XL · 54"–56"</option><option value="5XL (58&quot;–60&quot;)">5XL · 58"–60"</option></select></label><label>Quantity<select name="Hoodie quantity"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label></div></fieldset><fieldset data-item><legend>Polo shirt</legend><div class="chk"><label><input class="add" type="checkbox" name="Items" value="Polo shirt">Add a polo shirt</label></div><div class="row3"><label>Colour<select name="Polo shirt colour"><option>Red</option><option>White</option><option>Royal blue</option></select></label><label>Size<select name="Polo shirt size"><option value="S (35&quot;–37&quot;)">S · 35"–37"</option><option value="M (38&quot;–40&quot;)">M · 38"–40"</option><option value="L (41&quot;–43&quot;)">L · 41"–43"</option><option value="XL (44&quot;–46&quot;)">XL · 44"–46"</option><option value="XXL (47&quot;–49&quot;)">XXL · 47"–49"</option><option value="3XL (50&quot;–52&quot;)">3XL · 50"–52"</option><option value="4XL (53&quot;–55&quot;)" data-big="1">4XL · 53"–55"</option><option value="5XL (56&quot;–58&quot;)" data-big="1">5XL · 56"–58"</option></select></label><label>Quantity<select name="Polo shirt quantity"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label></div><p class="mute" style="margin:8px 0 0;font-size:.9rem">Polo shirt: red and royal blue come in S to 3XL. White comes in S to 5XL.</p></fieldset><fieldset data-item><legend>Beanie hat</legend><div class="chk"><label><input class="add" type="checkbox" name="Items" value="Beanie hat">Add a beanie hat</label></div><div class="row3"><label>Quantity<select name="Beanie quantity"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label></div></fieldset><div class="acts"><button class="btn" type="submit">Send via WhatsApp</button><button class="btn ghost" type="button" data-copy>Copy order</button></div></form></div></details>
 <div class="grp"><h2>Being part of it</h2><p>Serve and invite</p></div>
 <details><summary><span><b>How can I serve?</b><small>Pick your unit and when you can help</small></span></summary><div class="in">
 <p>Shiloh in Oxford runs on volunteers. Tick where you can help and we will put you on a rota that fits your week.</p>
@@ -188,11 +192,14 @@ function wa(t){return "https://wa.me/"+WA_NUMBER+"?text="+encodeURIComponent(t)}
 function tryCopy(t,btn){var old=btn.textContent;function ok(){btn.textContent="Copied";setTimeout(function(){btn.textContent=old},1800)}
 try{navigator.clipboard.writeText(t).then(ok,function(){window.prompt("Copy this:",t)})}catch(e){window.prompt("Copy this:",t)}}
 function msg(f){var l=["Shiloh 2026 Oxford: "+f.dataset.wa],fd=new FormData(f),k={};
-fd.forEach(function(v,n){if(v)(k[n]=k[n]||[]).push(v)});
+Array.prototype.forEach.call(f.elements,function(e){if(!e.name||e.disabled)return;if((e.type=="checkbox"||e.type=="radio")&&!e.checked)return;var fs=e.closest("fieldset[data-item]");if(fs&&!fs.querySelector(".add").checked)return;if(e.value)(k[e.name]=k[e.name]||[]).push(e.value)});
 Object.keys(k).forEach(function(n){l.push(n+": "+k[n].join(", "))});return l.join("\n")}
 document.querySelectorAll("form").forEach(function(f){
-f.addEventListener("submit",function(e){e.preventDefault();window.open(wa(msg(f)),"_blank","noopener")});
-var c=f.querySelector("[data-copy]");if(c)c.addEventListener("click",function(){tryCopy(msg(f),c)})});
+f.addEventListener("submit",function(e){e.preventDefault();if(f.querySelector(".add")&&!f.querySelector(".add:checked")){alert("Please tick at least one item.");return}window.open(wa(msg(f)),"_blank","noopener")});
+var c=f.querySelector("[data-copy]");if(c)c.addEventListener("click",function(){if(f.querySelector(".add")&&!f.querySelector(".add:checked")){alert("Please tick at least one item.");return}tryCopy(msg(f),c)})});
+(function(){var c=document.querySelector('select[name="Polo shirt colour"]'),z=document.querySelector('select[name="Polo shirt size"]');
+function upd(){var w=c.value=="White";Array.prototype.forEach.call(z.options,function(o){if(o.dataset.big){o.disabled=!w;o.hidden=!w}});if(z.selectedOptions[0].disabled)z.selectedIndex=0}
+c.addEventListener("change",upd);upd()})();
 var pageUrl=location.href.split("#")[0];
 try{new QRCode(document.getElementById("qr"),{text:pageUrl,width:128,height:128})}catch(e){document.querySelector(".qr").style.display="none"}
 document.getElementById("share").href=wa("Join us for Shiloh 2026 at WCI Oxford, Tue 8 – Sun 13 Dec. Times, pickups and directions: "+pageUrl);
@@ -207,7 +214,7 @@ tick();setInterval(tick,1000);
 document.getElementById("ics").addEventListener("click",function(){
 var days=[["20261208"],["20261209"],["20261210"],["20261211"],["20261212"],["20261213"]],
 L=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//WCI Oxford//Shiloh 2026//EN"];
-days.forEach(function(d,i){var S=i==4?[["050000","070000","Impartation Service",1]]:[["050000","061500","Prayer Hour",0],["061500","080000","Morning Session",0]];
+days.forEach(function(d,i){var S=i==4?[["060000","080000","Impartation Service",1]]:[["050000","061500","Prayer Hour",0],["061500","080000","Morning Session",0]];
 if(i>0&&i<4)S.push(["113000","130000","Specialised Classes",0]);S.push(["170000","190000","Evening Session",1]);
 S.forEach(function(x,j){L.push("BEGIN:VEVENT","UID:shiloh26-"+i+"-"+j+"@wci-oxford","DTSTAMP:20261101T000000Z","DTSTART;TZID=Europe/London:"+d[0]+"T"+x[0],"DTEND;TZID=Europe/London:"+d[0]+"T"+x[1],"SUMMARY:Shiloh 2026: "+x[2]+(x[3]?"":" (online)"),"LOCATION:"+(x[3]?VENUE:"Online"),"END:VEVENT")})});
 L.push("END:VCALENDAR");
